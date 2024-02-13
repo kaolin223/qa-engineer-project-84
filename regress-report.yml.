@@ -1,0 +1,76 @@
+---
+test-cases:
+- summary: |
+    Проверка добавления товара в корзину
+  status: pass
+
+---
+- summary: |
+    Удаление товара из корзины
+  status: pass
+
+---
+  - summary: |
+    Проверка фильтрации товара по наличию
+  status: fail
+
+---
+- summary: |
+    Проверка кнопки "Очистить корзину"
+  status: pass
+
+
+---
+- summary: |
+    Смена языка на сайте
+  status: pass
+
+---
+- summary: |
+    Проверка кнопок переключения категорий
+  status: pass
+
+---
+- summary: |
+    Проверка кнопки "Продолжить покупки"
+  status: pass
+
+bugreports:
+- summary: |
+    Фильтрация товара по наличию
+  environment: |
+    Mozilla Firefox 122.0.1 (64-разрядный), 
+    Ubuntu 22.04.1 LTS - 64бит
+  steps-to-reproduce: |
+     1. Выбрать фильтр "Нет в наличии"
+     2. Снять галочку
+  expected-result: |
+    Появится товар которого нет в наличии
+  actual-result: |
+    Товар не фильтруется
+
+- summary: |
+    Фильтрация товара по производителю
+  environment: |
+    Mozilla Firefox 122.0.1 (64-разрядный), 
+    Ubuntu 22.04.1 LTS - 64бит
+  steps-to-reproduce: |
+     1. Выбрать фильтр в колонке "Производитель" 
+  expected-result: |
+    Появится товар выбранного производителя
+  actual-result: |
+    Товар не фильтруется
+
+- summary: |
+    Локализация сайта
+  environment: |
+    Mozilla Firefox 122.0.1 (64-разрядный), 
+    Ubuntu 22.04.1 LTS - 64бит
+  steps-to-reproduce: |
+     1. Выбрать фильтр языка в меню "Language"
+     2. Перезагрузить страницу
+  expected-result: |
+    Локализация сайта останется на выбранном языке
+  actual-result: |
+    Сайт возвращается к дефолтному языку
+
