@@ -1,32 +1,32 @@
 ---
 - summary: |
     Проверка добавления товара в корзину
-status: pass
+  status: pass
 
 - summary: |
     Удаление товара из корзины
-status: pass
+  status: pass
 
 - summary: |
     Проверка фильтрации товара по наличию
-status: fail
+  status: fail
 
 - summary: |
     Проверка кнопки "Очистить корзину"
-status: pass
+  status: pass
 
 - summary: |
     Смена языка на сайте
-status: pass
+  status: pass
 
 - summary: |
     Проверка кнопок переключения категорий
-status: pass
+  status: pass
 
 - summary: |
     Проверка кнопки "Продолжить покупки"
-status: pass
+  status: pass
 
 - summary: |
     Проверка входа пользователя с несуществующими логином и паролем
-status: fail
+  status: fail
