@@ -1,41 +1,41 @@
 ---
 - summary: |
     Нет фильтрации по хештегам
-environment: |
+  environment: |
     Mozilla Firefox 122.0.1 (64-разрядный), 
     Ubuntu 22.04.1 LTS - 64бит
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Открываем карточку любого товара
     2. Переходим по ссылке хеш-тега товара
-expected-result: |
+  expected-result: |
     Система отображает все товары с хеш-тегом из карточки товара
-actual-result: |
+  actual-result: |
     Система отображает только выбранный товар с хеш-тегом
     
 - summary: |
     Нет возможности сбросить выбранный фильтр категории товаров
-environment: |
+  environment: |
     Mozilla Firefox 122.0.1 (64-разрядный), 
     Ubuntu 22.04.1 LTS - 64бит
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Открываем главную страницу
     2. Выбираем категорию товаров из выпадающего списка
     3. Проверяем возможность выбора пустой категории товаров
-expected-result: |
+  expected-result: |
     Есть возможность сбросить фильтр
-actual-result: |
+  actual-result: |
     Выпадающий список категорий товаров не содержит пустую категорию
     Сбросить фильтр возможно только перезагрузкой сайта.
 
 - summary: |
     Неполный перевод описания товара на русском языке
-environment: |
+  environment: |
     Mozilla Firefox 122.0.1 (64-разрядный), 
     Ubuntu 22.04.1 LTS - 64бит
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Открываем карточку товара
     2. Смотрим описание товара
-expected-result: |
+  expected-result: |
     Описание полностью переведено на русский язык
-actual-result: |
+  actual-result: |
     Описание остается на английском языке
