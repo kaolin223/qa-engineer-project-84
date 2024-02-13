@@ -7,9 +7,9 @@ status: pass
     Удаление товара из корзины
 status: pass
 
-  - summary: |
+- summary: |
     Проверка фильтрации товара по наличию
-  status: fail
+status: fail
 
 - summary: |
     Проверка кнопки "Очистить корзину"
