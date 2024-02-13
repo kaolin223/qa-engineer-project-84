@@ -9,6 +9,11 @@
   status: pass
 
 ---
+  - summary: |
+    Проверка фильтрации товара по наличию
+  status: fail
+
+---
 - summary: |
     Проверка кнопки "Очистить корзину"
   status: pass
